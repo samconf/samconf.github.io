@@ -1,0 +1,12 @@
+# Site settings
+title: South Asian Millennials Conference
+email: samcofficial@gmail.com
+description: "Founded in 2016, the South Asian Millennials Conference is the first-ever South Asian intercollegiate conference"
+baseurl: ""
+url: "http://samc2016.com"
+imgurl: "/assets/img"
+jsurl: "/assets/js"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
