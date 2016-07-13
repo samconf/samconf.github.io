@@ -1,0 +1,20 @@
+header {
+    width: 100%;
+    padding: 60px 0;
+    border-bottom: 1px solid #e1e1e1;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    z-index: 9999;
+    top: 0;
+    position: fixed;
+}
+
+.shrink {
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 30px;
+    text-indent: 40px;
+    font-weight:  bold;
+}
