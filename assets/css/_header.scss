@@ -1,20 +1,51 @@
 header {
-    width: 100%;
-    padding: 60px 0;
-    border-bottom: 1px solid #e1e1e1;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
-    z-index: 9999;
-    top: 0;
-    position: fixed;
+    height: 88px;
+    line-height: 88px;
+
+    #logo {
+        padding: 0;
+        height: inherit;
+        line-height: inherit;
+    }
+
+    .container > .navbar-header {
+        margin: 0;
+    }
+
+    .navbar-toggle {
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        margin: 27px 0;
+    }
+
+    ul {
+        text-align: right;
+    }
+
+    .nav > li {
+        display: inline-block;
+
+         a {
+            height: inherit;
+            line-height: inherit;
+            padding: 0 15px;
+        }
+
+        &:last-child {
+            padding-right: 0px;
+        }
+    }
 }
 
 .shrink {
-    padding: 20px 0;
-}
+    height: 50px;
+    line-height: 50px;
 
-header h1 {
-    font-size: 30px;
-    text-indent: 40px;
-    font-weight:  bold;
+    .navbar-toggle {
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        margin: 8px 0;
+    }
 }

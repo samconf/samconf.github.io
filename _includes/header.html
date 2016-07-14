@@ -1,5 +1,22 @@
 <header>
-    <div class="container clearfix">
-        <h1 id="logo">LOGO</h1>
-    </div>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="{{ url_for('index') }}" id="logo">SAMC</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav">
+                    <li><a href="{{ url_for('index') }}#about">About</a></li>
+                    <li><a href="">Apply</a></li>
+                    <li><a href="">SAMC 2016</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 </header>
