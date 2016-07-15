@@ -1,13 +1,34 @@
 header {
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    height: 88px;
-    line-height: 88px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    height: $header-height;
+    line-height: $header-height;
+
+    .navbar-default {
+        background-color: white;
+        opacity: 0.9;
+        border-color: #e1e1e1;
+    }
 
     #logo {
-        padding: 0;
-        height: inherit;
-        line-height: inherit;
+        position: relative;
+
+        img {
+            max-height: $header-height;
+            position: absolute;
+        }
+
+        img#logo-white {
+            display: none;
+            -webkit-transition: max-height 0.3s ease-in-out, opacity 0.3s step-end;
+            -moz-transition: max-height 0.3s ease-in-out, opacity 0.3s step-end;
+        }
+
+        img#logo-reg {
+            -webkit-transition: max-height 0.3s ease-in-out, visibility 0.3s step-end, opacity 0.3s step-end;
+            -moz-transition: max-height 0.3s ease-in-out, visibility 0.3s step-end, opacity 0.3s step-end;
+
+        }
     }
 
     .container > .navbar-header {
@@ -15,8 +36,8 @@ header {
     }
 
     .navbar-toggle {
-        -webkit-transition: all 0.4s ease-in-out;
-        -moz-transition: all 0.4s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
         margin: 27px 0;
     }
 
@@ -31,21 +52,139 @@ header {
             height: inherit;
             line-height: inherit;
             padding: 0 15px;
+            color: #000;
         }
 
         &:last-child {
             padding-right: 0px;
         }
     }
+
+    .menu-span {
+        position: absolute;
+        bottom: -1px;
+        height: 2px;
+        z-index: 10;
+        width: 100%;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: all 0.3s ease-out;
+    }
+
+    #about-bar,
+    #contact {
+        background-color: #197F71;
+    }
+
+    #apply {
+        background-color: #E7623B;
+    }
+
+    #samc2016 {
+        background-color: #601F4D;
+    }
+
+    .nav>li>a:hover,
+    .nav>li>a:focus {
+        background-color: transparent;
+        opacity: 0.8;
+    }
+
+    .active-link > span,
+    .nav > li:hover > span,
+    .nav > li:focus > span {
+        visibility: visible;
+        opacity: 1;
+    }
 }
 
-.shrink {
-    height: 50px;
-    line-height: 50px;
+#shrink {
+    height: $header-height-sm;
+    line-height: $header-height-sm;
+
+    .navbar-default {
+        background-color: white;
+        opacity: 0.9;
+        border-color: #e1e1e1;
+    }
+
+    #logo > img {
+        max-height: $header-height-sm;
+        top: 0;
+
+        &#logo-white {
+            opacity: 0;
+        }
+
+        &#logo-reg {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
 
     .navbar-toggle {
-        -webkit-transition: all 0.4s ease-in-out;
-        -moz-transition: all 0.4s ease-in-out;
         margin: 8px 0;
+    }
+
+    .nav > li > a {
+        color: #000;
+    }
+
+    #about-bar,
+    #contact {
+        background-color: #197F71;
+    }
+
+    #apply {
+        background-color: #E7623B;
+    }
+
+    #samc2016 {
+        background-color: #601F4D;
+    }
+
+    .nav > li > a:hover,
+    .nav > li > a:focus {
+        opacity: 0.8;
+    }
+
+    .nav > li:hover > span,
+    .nav > li:focus > span {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.index-header {
+    .navbar-default {
+        background-color: transparent;
+        border-color: transparent;
+        -webkit-transition: background-color 0.4s ease-in-out;
+    }
+
+    #logo {
+        img#logo-white {
+            display: block;
+        }
+        img#logo-reg {
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+    .nav > li > a {
+        color: #fff;
+    }
+
+    .nav > li > a:hover,
+    .nav > li > a:focus {
+        opacity: 0.8;
+    }
+
+    #about-bar,
+    #apply,
+    #samc2016,
+    #contact {
+        background-color: white;
     }
 }
