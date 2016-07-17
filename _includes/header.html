@@ -1,0 +1,25 @@
+<header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" id="toggle-button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="{{ site.baseurl }}/" id="logo">
+                    <img id="logo-reg" src="{{ site.imgurl }}/logo.png">
+                    <img id="logo-white" src="{{ site.imgurl }}/logo-white.png">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav">
+                    <li><a href="{{ url_for('index') }}/#about">About</a><span id="about-bar" class="menu-span"></span></li>
+                    <li><a href="{{ site.baseurl }}/apply/">Apply</a><span id="apply" class="menu-span"></span></li>
+                    <li><a href="{{ site.baseurl }}/samc-2016/">SAMC 2016</a><span id="samc2016" class="menu-span"></span></li>
+                    <li><a href="{{ site.baseurl }}/contact/">Contact</a><span id="contact" class="menu-span"></span></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

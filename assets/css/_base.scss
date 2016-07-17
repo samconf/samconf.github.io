@@ -1,0 +1,44 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: $base-font;
+    background-color: #fff;
+    color: #000;
+
+    p {
+        color: #6B6969
+    }
+}
+
+#content-container {
+    min-height: 100%;
+    box-sizing: border-box;
+    margin-bottom: -$footer-height;
+    padding-bottom: $footer-height;
+
+    @media(max-width: $screen-sm) {
+        margin-bottom: calc(-1 * (#{$footer-height} * 2));
+        padding-bottom: calc(#{$footer-height} * 2);
+    }
+}
+
+main {
+    padding-bottom: 30px;
+    background-color: #fff;
+
+    #page-title {
+        padding: 42px 15px;
+
+        h1 {
+            margin: 0 auto;
+            font-size: 2.5em;
+            font-weight: 100;
+            text-align: center;
+            letter-spacing: 0.1em;
+        }
+    }
+}

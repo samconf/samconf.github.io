@@ -5,13 +5,27 @@
 
     <body>
 
-        {% include header.html %}
+        <div id="content-container">
 
-        {{ content }}
+            {% include header.html %}
 
-        {% include footer.html %}
+            <main id="endpoint-{{ page.endpoint }}">
 
-        {% include scripts.html %}
+                {% if page.title %}
+                    <section id="page-title">
+                        <h1>{{ page.title }}</h1>
+                    </section>
+                {% endif %}
+
+                {{ content }}
+
+            </main>
+            
+        </div>
+
+            {% include footer.html %}
+
+            {% include scripts.html %}
 
     </body>
 
