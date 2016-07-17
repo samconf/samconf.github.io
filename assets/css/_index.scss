@@ -104,7 +104,8 @@
     #about {
         padding-top: $header-height;
         background-color: #fff;
-        min-height: 672px;
+        // Only include if content for this section is not enough!
+        //min-height: 672px;
 
         hr {
             margin-top: 0;
