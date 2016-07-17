@@ -3,7 +3,6 @@
 
     #hero {
         height: 100vh;
-        max-height: 729px;
 
         #img-container {
             width: 100%;
@@ -12,7 +11,12 @@
             visibility: visible;
             opacity: 1;
             transition: none;
+            -webkit-transition: none;
+            -moz-transition: none;
             transform: translateZ(0px);
+            -webkit-transform: translateZ(0px);
+            -ms-transform: translateZ(0px);
+            -moz-transform: translateZ(0px);
             background-image: url("../img/home-bg.jpg");
             background-position: center center;
         }
@@ -53,6 +57,10 @@
                             border-bottom: 1px solid white;
                             padding: 10px 15px;
                             color: #fff;
+
+                            @media(max-width: $screen-xs) {
+                                font-size: 20px;
+                            }
                         }
 
                         p {
@@ -75,7 +83,8 @@
                             min-width: 140px;
 
                             @media(max-width: $screen-sm) {
-                                min-width: 120px;
+                                min-width: 70px;
+                                font-size: 11px;
                             }
 
                             &:hover,
@@ -86,13 +95,24 @@
 
                         .animate1,
                         .animate2 {
-                            -webkit-transition: transform 0.6s ease-in-out;
-                            transition-duration: transform 0.6s ease-in-out;
-                            &.loading:nth-child(odd) {
-                                transform: translate(-1000%);
-                            }
-                            &.loading:nth-child(even) {
-                                transform: translate(1000%);
+                            @media(min-width: $screen-xs) {
+                                transition-duration: transform 0.6s ease-in-out;
+                                -webkit-transition: transform 0.6s ease-in-out;
+                                -moz-transition: transform 0.6s ease-in-out;
+
+                                &.loading:nth-child(odd) {
+                                    transform: translate(-100vw);
+                                    -webkit-transform: translate(-100vw);
+                                    -ms-transform: translate(-100vw);
+                                    -moz-transform: translate(-100vw);
+                                }
+
+                                &.loading:nth-child(even) {
+                                    transform: translate(100vw);
+                                    -webkit-transform: translate(100vw);
+                                    -ms-transform: translate(100vw);
+                                    -moz-transform: translate(100vw);
+                                }
                             }
                         }
                     }
@@ -104,8 +124,7 @@
     #about {
         padding-top: $header-height;
         background-color: #fff;
-        // Only include if content for this section is not enough!
-        //min-height: 672px;
+        min-height: calc(100vh - 56px);
 
         hr {
             margin-top: 0;
@@ -213,6 +232,10 @@
             }
             span {
                 font-size: 40px;
+
+                @media(max-width: $screen-sm) {
+                    font-size: 30px;
+                }
             }
         }
     }

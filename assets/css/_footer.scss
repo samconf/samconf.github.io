@@ -7,6 +7,9 @@ footer {
     p {
         color: $footer-color-fg;
         margin: 0;
+        @media(max-width: $screen-sm) {
+            font-size: 12px;
+        }
     }
 
     #social-media {
