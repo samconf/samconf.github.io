@@ -1,18 +1,21 @@
 footer {
     background-color: $footer-color-bg;
-    color: $footer-color-fg;
     line-height: $footer-height;
     bottom: 0;
-    position: absolute;
     width: 100%;
 
     p {
+        color: $footer-color-fg;
         margin: 0;
     }
 
     #social-media {
         text-align: left;
-        margin: 20.5px 0;
+        margin: 0;
+
+        @media(min-width: $screen-sm) {
+            margin: 20.5px 0;
+        }
 
         @media(max-width: $screen-sm) {
             text-align: center;
@@ -43,10 +46,10 @@ footer {
             &.facebook {
                 background-position: -5px -7px;
             }
-            &.twitter  {
+            &.twitter {
                 background-position: -55px -5px;
             }
-            &.instagram  {
+            &.instagram {
                 background-position: -106px -5px;
             }
         }

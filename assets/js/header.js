@@ -29,7 +29,11 @@ $(document).ready(function() {
     $('a').click(function(evt) {
         var $target = $(evt.target.hash);
             if ($target.length === 1) {
-                if($(document).scrollTop() < 50 && $('#endpoint-index').length != 0) {
+                if($('#endpoint-index').length != 0) {
+                    $("#navbar").removeClass("in");
+                    $("#toggle-button").addClass("collapsed");
+                }
+                if($(document).scrollTop() < 50) {
                     $('html, body').animate({
                         scrollTop: $target.offset().top
                     }, 500);
