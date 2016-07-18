@@ -10,6 +10,10 @@ jsurl: "/assets/js"
 # Build settings
 markdown: kramdown
 permalink: pretty
+
 sass:
   sass_dir: assets/css
   style: :compressed
+
+gems:
+  - jekyll-sitemap
