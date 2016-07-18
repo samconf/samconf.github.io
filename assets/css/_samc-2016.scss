@@ -4,6 +4,7 @@
         margin: 0 auto;
         display: block;
         max-width: 817px;
+        max-height: 520px;
     }
 
     h1 {
@@ -13,6 +14,11 @@
     ul {
         max-width: 800px;
         margin: auto;
+
+        &.slick-dots {
+            max-width: 100%;
+            padding-bottom: 5px;
+        }
     }
 
     li {
@@ -20,6 +26,15 @@
 
         strong {
             color: #000;
+        }
+    }
+
+    .slider {
+        max-width: 817px;
+        margin: 0 auto;
+
+        @media(max-width: $screen-xs) {
+            max-width: 80%;
         }
     }
 }
