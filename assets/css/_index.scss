@@ -85,6 +85,11 @@
                             @media(max-width: $screen-sm) {
                                 min-width: 70px;
                                 font-size: 11px;
+
+                                &:hover,
+                                &:focus {
+                                    opacity: 1;
+                                }
                             }
 
                             &:hover,
