@@ -143,11 +143,7 @@
             letter-spacing: 0.05px;
 
         }
-
-        .row {
-            padding: 20px 0;
-        }
-
+        
         .header {
             overflow: hidden;
             padding-bottom: 20px;
@@ -176,6 +172,10 @@
         .info {
             z-index: 10;
             padding-top: 20px;
+
+            @media(min-width: $screen-sm) {
+                padding-top: 70px;
+            }
         }
 
         .vertical-line {
