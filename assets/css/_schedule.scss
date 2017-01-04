@@ -1,0 +1,23 @@
+#endpoint-schedule {
+
+    table {
+        margin: auto;
+        line-height: 1.6;
+    }
+
+    .schedule tbody tr td:first-child {
+        width: 125px;
+        vertical-align: initial;
+        font-weight: bold;
+    }
+
+    .p1 {
+        color: #197F71;
+    }
+    .p2 {
+        color: #E7623B;
+    }
+    .p3 {
+        color: #601F4D;
+    }
+}
