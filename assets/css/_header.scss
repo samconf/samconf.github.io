@@ -93,16 +93,17 @@ header {
     }
 
     #about-bar,
-    #samc2016 {
+    #sponsors {
         background-color: #197F71;
     }
 
     #register,
-    #contact {
+    #samc2016 {
         background-color: #E7623B;
     }
 
-    #schedule {
+    #schedule,
+    #contact {
         background-color: #601F4D;
     }
 
@@ -152,19 +153,20 @@ header {
     }
 
     #about-bar,
-    #samc2016 {
+    #sponsors {
         background-color: #197F71;
     }
 
     #register,
-    #contact {
+    #samc2016 {
         background-color: #E7623B;
     }
 
-    #schedule {
+    #schedule,
+    #contact {
         background-color: #601F4D;
     }
-
+    
     .nav > li > a:hover,
     .nav > li > a:focus {
         opacity: 0.8;
@@ -207,6 +209,7 @@ header {
     #about-bar,
     #register,
     #schedule,
+    #sponsors,
     #samc2016,
     #contact {
         background-color: white;
