@@ -5,4 +5,34 @@
         display: block;
         max-width: 817px;
     }
+
+    p {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+
+        @media(max-width: $screen-xs) {
+            font-size: 14px;
+        }
+    }
+
+    ul {
+        text-align: center;
+        font-size: 20px;
+        padding: 0;
+
+        @media(max-width: $screen-xs) {
+            font-size: 12px;
+        }
+
+        li {
+            display: block;
+            margin-bottom: 10px;
+
+            a {
+                color: black;
+            }
+        }
+    }
 }
