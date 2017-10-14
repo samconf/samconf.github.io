@@ -3,7 +3,6 @@ $(document).ready(function() {
     if ($('#endpoint-index').length === 0) {
         return;
     }
-
     var date = '2018-02-03T00:00:00-05:00';
 
     function getTimeRemaining(endtime) {
