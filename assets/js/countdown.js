@@ -4,7 +4,7 @@ $(document).ready(function() {
         return;
     }
 
-    var date = '2017-02-04T00:00:00-05:00';
+    var date = '2018-02-03T00:00:00-05:00';
 
     function getTimeRemaining(endtime) {
         var t = Date.parse(endtime) - Date.parse(new Date());
